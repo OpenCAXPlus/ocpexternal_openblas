@@ -3,10 +3,10 @@
 # The source code must be in ocp/external/external_id/version/source folder
 # get command line arguments
 version=${1}
-external_id=${2}
+external_id=${2:-"openblas"}
 
 # prepare necessary variables
-url="https://github.com/gabime/spdlog/archive/refs/tags/v$version.tar.gz"
+url="https://github.com/xianyi/OpenBLAS/archive/refs/tags/v${version}.tar.gz"
 dir="ocp/external/$external_id/$version/source"
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 gz_file="$external_id-v$version.tar.gz"
