@@ -2,7 +2,7 @@
 # You should modify this script to prepare the folder structure for external project source codes
 # The source code must be in ocp/external/external_id/version/source folder
 # get command line arguments
-version=${1}
+version=${1:-"0.3.23"}
 external_id=${2:-"openblas"}
 
 # prepare necessary variables

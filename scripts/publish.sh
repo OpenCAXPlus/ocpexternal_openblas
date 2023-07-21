@@ -4,7 +4,7 @@
 # permission to the bucket. To publish this external project, please submit an 
 # issue in the OCP sdk repository.
 
-version=${1}
+version=${1:-"0.3.23"}
 external_id=${2:-"openblas"}
 
 xzfile="$external_id-$version.tar.xz"
